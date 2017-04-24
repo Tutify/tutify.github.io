@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutify App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div></div>
+    <div>
+        <div id="signup-header" class="header-blue" style="background-color:#184e8e;">
+            <nav class="navbar navbar-default navigation-clean-search">
+                <div class="container">
+                    <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Tutify </a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active" role="presentation"><a href="#">Link</a></li>
+                            <li class="active" role="presentation"><a href="#">How it Works</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">First Item</a></li>
+                                    <li role="presentation"><a href="#">Second Item</a></li>
+                                    <li role="presentation"><a href="#">Third Item</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation"><a href="index.html" class="btn btn-primary">Need a Tutor?</a></li>
+                        </ul>
+                        <p class="navbar-text navbar-right"><a class="navbar-link login" href="students.html">Log In</a> <a class="btn btn-default action-button" role="button" href="#" data-toggle="modal" data-target="loginModal">Sign Up</a></p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="contact-clean">
+        <form method="post" action="students.html">
+            <h2 class="text-center">Tutor Sign Up</h2>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="Name"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback">
+                <label class="control-label">Tutoring Experience</label>
+                <select class="form-control">
+                    <optgroup label="Occupation Select">
+                        <option value="13">Significant (&gt;50 hours)</option>
+                        <option value="14">Some (&lt;50 hours)</option>
+                        <option value="15">None</option>
+                    </optgroup>
+                </select><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback">
+                <label class="control-label">Occupation</label>
+                <select class="form-control">
+                    <optgroup label="Occupation Select">
+                        <option value="13">Student</option>
+                        <option value="14">Teacher</option>
+                        <option value="15">Other</option>
+                    </optgroup>
+                </select><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="University"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="Course"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="Current year of study"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="ATAR (or equivalent)"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <h5>Contact Details</h5>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="Location"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="Phone"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="Best time to contact you"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-error has-feedback">
+                <input class="form-control" type="email" name="email" placeholder="Email"><i class="form-control-feedback glyphicon glyphicon-remove" aria-hidden="true"></i>
+                <p class="help-block">Please enter a correct email address.</p>
+            </div>
+            <div class="form-group has-success has-feedback">
+                <label class="control-label">How did you find out about us?</label>
+                <select class="form-control">
+                    <optgroup label="Occupation Select">
+                        <option value="13">Search Engine</option>
+                        <option value="14">Job board</option>
+                        <option value="15">Word of mouth</option>
+                        <option value="16">Other</option>
+                    </optgroup>
+                </select><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Submit </button>
+            </div>
+        </form>
+    </div>
+    <div class="projects-horizontal"></div>
+    <div class="features-boxed"></div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2016</p>
+        </footer>
+    </div>
+    <div class="footer-clean"></div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="loginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Login </h4></div>
+                <div class="modal-body">
+                    <p>The content of your modal.</p>
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Email">
+                            <input class="form-control" type="password" placeholder="password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button">Login </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

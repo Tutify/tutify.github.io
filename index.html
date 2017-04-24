@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutify App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div></div>
+    <div>
+        <div class="header-blue" style="background-color:#184e8e;">
+            <nav class="navbar navbar-default navigation-clean-search">
+                <div class="container">
+                    <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Tutify </a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active" role="presentation"><a href="#">How it Works</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">First Item</a></li>
+                                    <li role="presentation"><a href="#">Second Item</a></li>
+                                    <li role="presentation"><a href="#">Third Item</a></li>
+                                </ul>
+                            </li>
+                            <li role="presentation"><a href="tutors.html" class="btn btn-primary">Become a Tutor</a></li>
+                        </ul>
+                        <p class="navbar-text navbar-right"><a class="navbar-link login">Log In</a>
+                            <button class="btn btn-default btn-primary" type="button" data-toggle="modal" data-target="#loginModal">Log In</button> <a class="btn btn-default action-button" role="button" href="p_signup.html">Sign Up</a></p>
+                    </div>
+                </div>
+            </nav>
+            <div class="container hero">
+                <div class="row">
+                    <div class="col-lg-12 col-lg-offset-1 col-md-12 col-md-offset-0">
+                        <h1>Smart private tutoring for the next generation.</h1>
+                        <p>Find a certified, professional tutor and book instantly. Guaranteed quality tutors, matched to your child's personality.</p><a class="btn btn-default btn-lg action-button" role="button" href="index.html#learn-more">Learn More</a>
+                        <div
+                        id="search-div">
+                            <h2 style="color:rgb(254,254,254);margin-bottom:25px;margin-top:20px;">Hire a Tutor instantly</h2>
+                            <form class="form-horizontal" action="p_signup.html" method="post">
+                                <label class="sr-only" for="yearSelect">Label</label>
+                                <div class="col-md-2">
+                                    <select class="form-control required col-md-2" id="yearSelect">
+                                        <optgroup label="This is a group">
+                                            <option value="12" selected="">Choose Year</option>
+                                            <option value="13">Year 1</option>
+                                            <option value="2">Year 2</option>
+                                            <option value="3">Year 3</option>
+                                            <option value="4">...</option>
+                                            <option value="11">Year 11</option>
+                                            <option value="12">Year 12</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <label class="sr-only" for="subjectSelect">Label</label>
+                                <div class="col-md-2" data-toggle="tooltip">
+                                    <select class="form-control required" id="subjectSelect">
+                                        <optgroup label="Choose Subject"></optgroup>
+                                        <optgroup label="Mathematics">
+                                            <option value="2">General Maths</option>
+                                            <option value="">Advanced</option>
+                                            <option value="">Extension</option>
+                                        </optgroup>
+                                        <optgroup label="English">
+                                            <option value="3">Standard</option>
+                                            <option value="">Extension</option>
+                                        </optgroup>
+                                        <optgroup label="Science">
+                                            <option value="4">Physics</option>
+                                            <option value="5">Chemistry</option>
+                                            <option value="6">Biology</option>
+                                        </optgroup>
+                                        <optgroup label="Misc">
+                                            <option value="7">Other</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="col-md-4" data-toggle="tooltip" title="Linked to Google Places API">
+                                    <label class="sr-only" for="locationForm">Label</label>
+                                    <input class="form-control required" type="text" id="locationForm" placeholder="Choose a location">
+                                </div>
+                                <div class="col-md-3" placeholder="Email">
+                                    <label class="sr-only" for="locationForm">Label</label>
+                                    <input class="form-control required" type="email" id="parentemailInput" placeholder="Email">
+                                </div><a class="btn btn-default btn-primary" role="button" href="p_signup.html">Go! </a></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="features-boxed">
+        <div class="container" id="learn-more">
+            <div class="intro">
+                <h2 class="text-center">The future of private tutoring</h2>
+                <p class="text-center">We train and test our tutors to ensure the highlest level of professionalism and quality so you have peace of mind</p>
+            </div>
+            <div class="row features">
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><i class="glyphicon glyphicon-certificate icon" style="color:#184e8e;"></i>
+                        <h3 class="name">Certified professionals</h3>
+                        <p class="description">All tutors have completed our rigorous training and testing process to guarantee quality </p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><i class="fa fa-magic icon" style="color:#184e8e;"></i>
+                        <h3 class="name">Engaging learning activites</h3>
+                        <p class="description"> Our tutors use lesson magic to plan truly engaging lessons. Students love their lessons and will love learning.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><i class="glyphicon glyphicon-ok icon glyphicon-ok" style="color:#184e8e;"></i>
+                        <h3 class="name">Safety checked</h3>
+                        <p class="description">All tutors have Working With Children (WWC) certificates and have had background checks completed</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><i class="glyphicon glyphicon-time icon" style="color:#184e8e;"></i>
+                        <h3 class="name">Effortless booking</h3>
+                        <p class="description">You won't need to think about cancellations or having cash on you ever gain.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><i class="fa fa-line-chart icon" style="color:#184e8e;"></i>
+                        <h3 class="name">See progress!</h3>
+                        <p class="description">Peace of mind as you watch your child overcome their weaknesses and discover the strengths day by day.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><i class="glyphicon glyphicon-heart icon" style="color:#184e8e;"></i>
+                        <h3 class="name">Perfect tutors, perfect support</h3>
+                        <p class="description">We support our tutors to get the best out of your child. And we support you to make sure you get the best out of your tutor</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="app-header" class="header-blue" style="background-color:#184e8e;">
+            <div class="container hero" id="heroWebApp">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0">
+                        <h1>Use our web platform to make your life easy</h1>
+                        <p>Effortless lesson booking, detailed progress reporting, and&nbsp; syllabus-aligned content, all at your fingertips</p>
+                        <button class="btn btn-default btn-lg action-button" type="button">View Demo</button>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 hidden-xs hidden-sm phone-holder">
+                        <div class="iphone-mockup" data-toggle="tooltip" title="Needs to be the suite of desktop, tablet, mobile. Need to show key features like calendar, reporting charts, etc. Need these visualisations on the page"><img src="assets/img/iphone.svg" class="device">
+                            <div class="screen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team-boxed">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Meet some of our tutors</h2>
+                <p class="text-center">Certified professional tutors. Matched to your needs.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><img class="img-circle" src="assets/img/1.jpg">
+                        <h3 class="name">Ben Johnson</h3>
+                        <p class="title">Maths Tutor</p>
+                        <p class="description">Ben is a Mechanical Engineering student. He graduated from Trinity School with an ATAR of 96 and specialises in Maths and Physics for HSC. He loves opening minds with his knowledge of astrophyics!</p>
+                        <div class="social"><a href="#" class="btn btn-default">Book this tutor!</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><img class="img-circle" src="assets/img/2.jpg">
+                        <h3 class="name">Emily Clark</h3>
+                        <p class="title">Primary Maths Tutor</p>
+                        <p class="description">Emily is studying for a Bachelor of Education (Primary). She loves kids and loves teaching them new things in exciting and fun ways. In her spare time, she likes to paint and make music.</p>
+                        <div class="social"><a href="#" class="btn btn-default">Book this tutor!</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box"><img class="img-circle" src="assets/img/3.jpg">
+                        <h3 class="name">Carl Kent</h3>
+                        <p class="title">Stylist</p>
+                        <p class="description">Carl is studying for a Juris Doctor and specialises in tutoring law at HSC level. He also tutors English at all levels. Carl likes public speaking and debating and likes to teach these to his students.</p>
+                        <div class="social"><a href="#" class="btn btn-default">Book this tutor!</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Testimonials </h2>
+                <p class="text-center">Our customers love us! Read what they have to say below. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box">
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                    </div>
+                    <div class="author"><img class="img-circle" src="assets/img/1.jpg">
+                        <h5 class="name">Ben Johnson</h5>
+                        <p class="title">CEO of Company Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box">
+                        <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+                    </div>
+                    <div class="author"><img class="img-circle" src="assets/img/3.jpg">
+                        <h5 class="name">Carl Kent</h5>
+                        <p class="title">Founder of Style Co.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item">
+                    <div class="box">
+                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                    </div>
+                    <div class="author"><img class="img-circle" src="assets/img/2.jpg">
+                        <h5 class="name">Emily Clark</h5>
+                        <p class="title">Owner of Creative Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brands">
+        <h2 class="text-center">As featured in</h2>
+        <a href="#"> <img src="assets/img/instacart.png"><img src="assets/img/kickstarter.png"><img src="assets/img/lyft.png"><img src="assets/img/shopify.png"><img src="assets/img/pinterest.png"><img src="assets/img/twitter.png"></a>
+    </div>
+    <div class="highlight-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Get Started!</h2>
+                <p class="text-center">Upgrade your tutoring experience or find a tutor with Tutify.</p>
+            </div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Primary</a>
+                <button class="btn btn-default" type="button">Secondary</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2016</p>
+        </footer>
+    </div>
+    <div class="footer-clean"></div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="ploginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Login </h4></div>
+                <div class="modal-body">
+                    <p>Enter details below to login.</p>
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Email">
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button><a class="btn btn-primary" role="button" href="students.html">Login </a></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

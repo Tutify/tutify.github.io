@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutify App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="tutors.html">Tutify </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="students.html">Students </a></li>
+                        <li role="presentation"><a href="lessons.html">Lessons </a></li>
+                        <li role="presentation"><a href="resources.html">Resources </a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a href="profile.html">My Profile</a></li>
+                                <li role="presentation"><a href="#">Payments </a></li>
+                                <li role="presentation"><a href="tutors.html">Logout </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container profile profile-view" id="profile">
+        <div class="row">
+            <div class="col-md-12 alert-col relative">
+                <div class="alert alert-info absolue center" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+            </div>
+        </div>
+        <form>
+            <div class="row profile-row">
+                <div class="col-md-4 relative">
+                    <div class="avatar">
+                        <div class="avatar-bg center"></div>
+                    </div>
+                    <input type="file" class="form-control" name="avatar-file">
+                    <div class="center-align">
+                        <div class="checkbox" data-toggle="tooltip" title="Profile must be completed to enable discovery.">
+                            <label>
+                                <input type="checkbox">Enable Profile Discovery</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h1>My Profile </h1>
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li><a href="#tab-profile" role="tab" data-toggle="tab">Profile </a></li>
+                            <li><a href="#tab-contact" role="tab" data-toggle="tab">Contact </a></li>
+                            <li><a href="#tab-expertise" role="tab" data-toggle="tab">Expertise </a></li>
+                            <li><a href="#tab-education" role="tab" data-toggle="tab">Education </a></li>
+                            <li><a href="#tab-legal" role="tab" data-toggle="tab">Legal </a></li>
+                            <li class="active"><a href="#tab-legal" role="tab" data-toggle="tab-payments">Bank Details</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane" role="tabpanel" id="tab-profile">
+                                <p>Edit your profile details here.</p>
+                                <hr>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Firstname </label>
+                                                <input class="form-control" type="text" name="firstname">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Lastname </label>
+                                                <input class="form-control" type="text" name="lastname">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Email </label>
+                                        <input class="form-control" type="email" autocomplete="off" required="" name="email">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Password </label>
+                                                <input class="form-control" type="password" name="password" autocomplete="off" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Confirm Password</label>
+                                                <input class="form-control" type="password" name="confirmpass" autocomplete="off" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-expertise">
+                                <p>Edit your education details here.</p>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Subject </label>
+                                                <input class="form-control" type="text" name="universityInput" autocomplete="on">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <p><strong>Age Range</strong></p>
+                                            <div class="form-group form-inline">
+                                                <label class="control-label"> From </label>
+                                                <input class="form-control form-inline" type="number" min="1" max="12">
+                                                <label class="control-label"> To </label>
+                                                <input class="form-control form-inline" type="number" min="1" max="12">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-default add-docs btn-primary" type="button">Add Subject</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="tab-pane active" role="tabpanel" id="tab-legal">
+                                <p>Edit your bank details here.</p>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Account Name</label>
+                                                <input class="form-control" type="text" name="banknameInput">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Bank Name</label>
+                                                <input class="form-control" type="text" name="banknameInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Account Number</label>
+                                                <input class="form-control" type="text" name="bankInput">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">BSB </label>
+                                                <input class="form-control" type="text" name="bsbInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-education">
+                                <p>Edit your education details here.</p>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Course </label>
+                                                <input class="form-control" type="tel" name="courseInput" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Graduation Year</label>
+                                                <input class="form-control" type="number" name="gradyearInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" name="universityInput" required="" autocomplete="on">University </label>
+                                        <input class="form-control" type="text" autocomplete="on" required="" name="addressInput">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label" name="schoolInput" autocomplete="on">School </label>
+                                                <input class="form-control" type="tel" name="courseInput" required="" autocomplete="on">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">ATAR (or equivalent)</label>
+                                                <input class="form-control" type="number" placeholder="100.00" min="0" max="100" step="0.05" name="atarInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h5>Academic Transcripts</h5>
+                                            <button class="btn btn-default add-docs btn-primary" type="button">Add Doc</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-contact">
+                                <p>Edit your contact details.</p>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Phone</label>
+                                                <input class="form-control" type="tel" name="phoneInput" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Skype ID</label>
+                                                <input class="form-control" type="text" name="skypeInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Address </label>
+                                        <input class="form-control" type="text" autocomplete="on" required="" name="addressInput">
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-payments">
+                                <p>Edit your contact details.</p>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Phone</label>
+                                                <input class="form-control" type="tel" name="phoneInput" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Skype ID</label>
+                                                <input class="form-control" type="text" name="skypeInput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Address </label>
+                                        <input class="form-control" type="text" autocomplete="on" required="" name="addressInput">
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 content-right">
+                            <button class="btn btn-primary form-btn" type="submit">SAVE </button>
+                            <button class="btn btn-danger form-btn" type="reset">CANCEL </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

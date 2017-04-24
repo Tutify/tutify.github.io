@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutify App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Tutify </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="students.html">Students </a></li>
+                        <li role="presentation"><a href="lessons.html">Lessons </a></li>
+                        <li class="active" role="presentation"><a href="#">Resources </a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a href="profile.html">My Profile</a></li>
+                                <li role="presentation"><a href="#">Payments </a></li>
+                                <li role="presentation"><a href="tutors.html">Logout </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>This page could easily be modelled on Google Drive. We would want to be able to filter by Resource type, date added, and also Topics. </p>
+                <p>Basically, each resource will be tagged with multiple topics -&gt; see the resource_editor.html page</p>
+                <p>Maybe we could show via hover the topics / content that a resource has been tagged. As an example, hover over the purple boxes below.</p>
+                <p>Also, thumbnails / previews of the linked resource would be great. A bit like Pinterest or when you post a link on Facebook</p><a href="resource_editor.html" class="btn btn-primary" data-toggle="tooltip">Add Resource</a>
+                <div class="resource">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Resource Title</th>
+                                    <th>Type </th>
+                                    <th>Content </th>
+                                    <th>Edit </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>This is an example resource</td>
+                                    <td>
+                                        <p title="This would be an icon representing the resource type. Eg: Video, worksheet, explanation, activity." data-toggle="tooltip">Video </p>
+                                    </td>
+                                    <td>
+                                        <div class="topic-box" data-toggle="tooltip" title="Fractions"></div>
+                                        <div class="topic-box" data-toggle="tooltip" title="Algebra"></div>
+                                        <div class="topic-box" data-toggle="tooltip" title="Dividing fractions"></div>
+                                    </td>
+                                    <td> <a href="resource_editor.html" class="btn btn-primary">Edit </a></td>
+                                </tr>
+                                <tr></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="resource">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Resource Title</th>
+                                    <th>Type </th>
+                                    <th>Content </th>
+                                    <th>Edit </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>This is an example resource</td>
+                                    <td>Video </td>
+                                    <td>
+                                        <div class="topic-box"></div>
+                                        <div class="topic-box"></div>
+                                        <div class="topic-box"></div>
+                                    </td>
+                                    <td> <a href="resource_editor.html" class="btn btn-primary">Edit </a></td>
+                                </tr>
+                                <tr></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
