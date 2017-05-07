@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutify App v2</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Brands.css">
+    <link rel="stylesheet" href="assets/css/Campaign-Progress--Summary-Panel.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/fullcalendar.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Fixed-Side1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-User-List.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button1.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit1.css">
+    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Testimonials.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Tutify </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="students.html">Students </a></li>
+                        <li role="presentation"><a href="lessons.html">Lessons </a></li>
+                        <li role="presentation"><a href="resources.html">Resources </a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a href="profile.html">My Profile</a></li>
+                                <li role="presentation"><a href="#">Payments </a></li>
+                                <li role="presentation"><a href="tutors.html">Logout </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container profile profile-view" id="profile">
+        <div class="row">
+            <div class="col-md-12 alert-col relative">
+                <div class="alert alert-info absolue center" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+            </div>
+        </div>
+        <form>
+            <div class="row profile-row">
+                <div class="col-md-12">
+                    <h1>Add Lesson</h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label" for="inputFrom">Start </label>
+                                <input class="form-control" type="datetime-local" id="inputFrom">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label" for="inputTo">End </label>
+                                <input class="form-control" type="datetime-local" id="inputTo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Email </label>
+                        <input class="form-control" type="email" autocomplete="off" name="email" data-toggle="tooltip" title="not required unless the &quot;Student is client&quot; box is checked">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label"> Grade</label>
+                                <select class="form-control">
+                                    <optgroup label="This is a group">
+                                        <option value="12" selected="">This is item 1</option>
+                                        <option value="13">This is item 2</option>
+                                        <option value="14">This is item 3</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">School: </label>
+                                <input class="form-control" type="search">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label"> Rate Charged ($/h)</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span>$</span></div>
+                                    <input class="form-control" type="text">
+                                    <div class="input-group-addon"><span>.00</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">Parent </label>
+                                <select class="form-control" data-toggle="tooltip" title="Required unless the &quot;Student is client&quot; box is checked">
+                                    <optgroup label="This is a group">
+                                        <option value="12" selected="">Rod Murray</option>
+                                        <option value="13">Jess Millen</option>
+                                        <option value="14">Jim Parent</option>
+                                    </optgroup>
+                                </select>
+                                <div class="checkbox form-inline">
+                                    <label class="control-label">
+                                        <input type="checkbox">Student is client</label>
+                                </div><a href="add_client.html" class="btn btn-primary">Add Parent</a></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 content-right"><a class="btn btn-primary form-btn" role="button" href="" type="submit" data-toggle="tooltip" title="Adds student to list. Sends email to them if they have entered an email address. Also sends an email to the parent -> if a new parent is added, sends welcome email. If existing parent, sends nothing.">SAVE </a>
+                            <a
+                            class="btn btn-danger form-btn" role="button" href="students.html" type="reset">CANCEL </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/fullcalendar.js"></script>
+    <script src="assets/js/Profile-Edit.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

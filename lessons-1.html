@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutify App</title>
+    <title>Tutify App v2</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -65,9 +65,14 @@
                 </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="calendar"></div>
+        <div class="col-md-12">
+            <h4>NOTE: Use fullcalendar.js for this screen - drag n drop events ("Lessons"). Also add events from here. Need to be able to add repeating events. Associate events with a student (eventSource). For v3.0, need to be able to associate a lesson with a "Class". A class will be made up of multiple students.</h4>
+            <h2>Lessons </h2>
+            <button class="btn btn-default btn-primary" type="button" data-toggle="modal" data-target="#addLessonModal">Add Lesson</button>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="calendar"></div>
+                </div>
             </div>
         </div>
     </div>

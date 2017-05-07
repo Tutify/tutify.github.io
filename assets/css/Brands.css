@@ -26,3 +26,34 @@
   color:white;
 }
 
+.btn.btn-default.btn-primary.add-docs {
+  margin:10px;
+}
+
+#heroWebApp {
+  margin-top:0;
+}
+
+#signup-header {
+  padding-bottom:0px;
+}
+
+#app-header {
+  padding-top:42px;
+}
+
+.progress-icon {
+  font-size:30px;
+  color:blue;
+}
+
+#header-search-results {
+  padding-bottom:0px;
+}
+
+#show-more {
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
