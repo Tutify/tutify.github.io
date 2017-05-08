@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutify App</title>
+    <title>Tutify App v2</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="form-group">
                         <label class="control-label">Email </label>
-                        <input class="form-control" type="email" autocomplete="off" required="" name="email">
+                        <input class="form-control" type="email" autocomplete="off" name="email" data-toggle="tooltip" title="not required unless the &quot;Student is client&quot; box is checked">
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
@@ -106,7 +106,7 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label class="control-label">Parent </label>
-                                <select class="form-control">
+                                <select class="form-control" data-toggle="tooltip" title="Required unless the &quot;Student is client&quot; box is checked">
                                     <optgroup label="This is a group">
                                         <option value="12" selected="">Rod Murray</option>
                                         <option value="13">Jess Millen</option>
@@ -121,9 +121,9 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-md-12 content-right">
-                            <button class="btn btn-primary form-btn" type="submit">SAVE </button>
-                            <button class="btn btn-danger form-btn" type="reset">CANCEL </button>
+                        <div class="col-md-12 content-right"><a class="btn btn-primary form-btn" role="button" href="" type="submit" data-toggle="tooltip" title="Adds student to list. Sends email to them if they have entered an email address. Also sends an email to the parent -> if a new parent is added, sends welcome email. If existing parent, sends nothing.">SAVE </a>
+                            <a
+                            class="btn btn-danger form-btn" role="button" href="students.html" type="reset">CANCEL </a>
                         </div>
                     </div>
                 </div>
