@@ -116,10 +116,53 @@
                                 <div class="checkbox form-inline">
                                     <label class="control-label">
                                         <input type="checkbox">Student is client</label>
-                                </div><a href="add_client.html" class="btn btn-primary">Add Parent</a></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-default btn-primary" type="button" data-toggle="collapse" data-target="#p_profile">Add Parent</button>
                         </div>
                     </div>
                     <hr>
+                    <div id="p_profile" class="collapse">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>Add Parent</h1></div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label">Firstname </label>
+                                    <input class="form-control" type="text" name="p_firstname">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label">Lastname </label>
+                                    <input class="form-control" type="text" name="p_lastname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label">Email </label>
+                                    <input class="form-control" type="email" autocomplete="off" name="p_email" data-toggle="tooltip" title="not required unless the &quot;Student is client&quot; box is checked">
+                                </div>
+                                <div class="form-group"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="p_phone">Phone Number</label>
+                                    <input class="form-control" type="tel" name="p_phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="p_address">Address </label>
+                                    <input class="form-control" type="text" name="p_address">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12 content-right"><a class="btn btn-primary form-btn" role="button" href="" type="submit" data-toggle="tooltip" title="Adds student to list. Sends email to them if they have entered an email address. Also sends an email to the parent -> if a new parent is added, sends welcome email. If existing parent, sends nothing.">SAVE </a>
                             <a
