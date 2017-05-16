@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
@@ -69,8 +70,13 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="control-label" for="username">Username </label>
+                        <input class="form-control" type="text" readonly="" autocomplete="off" name="username" data-toggle="tooltip" title="Only students have usernames. Email is optional. Username generated automatically from names but can be edited."
+                        required="" read-only="">
+                    </div>
+                    <div class="form-group">
                         <label class="control-label">Email </label>
-                        <input class="form-control" type="email" autocomplete="off" name="email" data-toggle="tooltip" title="not required unless the &quot;Student is client&quot; box is checked">
+                        <input class="form-control" type="email" autocomplete="off" name="email" data-toggle="tooltip" title="Optional">
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
@@ -113,7 +119,7 @@
                                         <option value="14">Jim Parent</option>
                                     </optgroup>
                                 </select>
-                                <div class="checkbox form-inline">
+                                <div class="checkbox form-inline hidden">
                                     <label class="control-label">
                                         <input type="checkbox">Student is client</label>
                                 </div>
